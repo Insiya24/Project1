@@ -3,7 +3,7 @@ import openai
 # from fpdf import FPDF
 
 # Set your OpenAI API key here
-openai.api_key = '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'
+openai.api_key = st.secrets["INSANIYA"]
 
 def generate_prescription(name, diagnosis, age, sex, weight, current_medications, allergies, coexisting_conditions):
     prompt = f"""Act as a Medical profession. Use Name: {name}\nDiagnosis: {diagnosis}\nAge: {age} years\nSex: {sex}\nWeight: {weight} 
